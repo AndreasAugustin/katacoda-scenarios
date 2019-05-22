@@ -12,6 +12,9 @@
   "backend": {
     "imageid": "node6"
   },
+  "files": [
+    "packages/*"
+  ],
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
