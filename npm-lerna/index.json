@@ -19,6 +19,7 @@
       "answer": "answer1.md"
     }],
     "intro": {
+      "code": "intro.sh",
       "text": "intro.md",
       "credits": "https://github.com/lerna/lerna"
     },
