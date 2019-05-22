@@ -1,0 +1,10 @@
+{
+  "pathwayTitle": "NPM",
+  "title": "NPM lerna basics",
+  "description": "Learn how to manage packages with lerna",
+  "difficulty": "beginner",
+  "time": "5-10 minutes",
+  "environment": {
+    "uilayout": "editor-terminal"
+  }
+}
