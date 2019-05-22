@@ -13,11 +13,12 @@
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
-      "text": "step1.md"
+      "text": "step1.md",
+      "answer": "answer1.md"
     }],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "credits": "https://github.com/lerna/lerna"
     },
     "finish": {
       "text": "finish.md"
