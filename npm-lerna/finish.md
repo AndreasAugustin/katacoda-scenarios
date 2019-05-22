@@ -1,5 +1,3 @@
-tmp
-
 # Finished
 
 You have completed this learning.

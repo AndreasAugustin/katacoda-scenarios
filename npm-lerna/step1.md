@@ -1,12 +1,12 @@
-here
-
 # Init
 
 ## GTS
 
 We want to use *GTS* for managing our typescript project.
 
-`npx gts init`{{execute}
+`npx gts init`{{execute}}
+
+Accept with *Y*.
 
 ## Lerna
 
