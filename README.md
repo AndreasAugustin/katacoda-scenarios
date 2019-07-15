@@ -1,11 +1,6 @@
-# Interactive Katacoda Scenarios
+# Katacoda scenarios
 
-[![KataCoda](http://shields.katacoda.com/katacoda/andreasaugustin/count.svg)](https://www.katacoda.com/andreasaugustin "Get your profile on Katacoda.com")
+## Abstract
 
-Visit <https://www.katacoda.com/andreasaugustin> to view the profile and interactive scenarios
-
-## Writing Scenarios
-
-Visit <https://www.katacoda.com/docs> to learn more about creating Katacoda scenarios
-
-For examples, visit <https://github.com/katacoda/scenario-example>
+This repository includes the source code for different Katacoda scenarios.
+Please see [README](doc/README.md) for usage information.
