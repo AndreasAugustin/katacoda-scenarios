@@ -83,3 +83,17 @@ The project is built with `make`
 ```bash
 make help
 ```
+
+### Playground
+
+Docker is used for build environment.
+
+```bash
+make bash-node
+```
+
+or
+
+```bash
+makke bash-katacoda
+```
