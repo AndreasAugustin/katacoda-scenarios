@@ -6,17 +6,22 @@ help:  ## help target to show available commands with information
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) |  awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
 .PHONY: validate
-validate:  ## Validate the katacoda scenarios
-	katacoda validate-all
+validate:  docker-build ## Validate the katacoda scenarios
+	docker-compose run katacoda katacoda validate-all
+
+.PHONY: markdownlint
+markdownlint: docker-build ## Validate markdown files
+	docker-compose run node markdownlint docs/
+	docker-compose run node markdownlint npm-lerna/
 
 .PHONY: docker-build
 docker-build: ## Build Container
 	docker-compose build
 
-.PHONY: bash
-bash: docker-build ## Build container
-	docker-compose run base bash
+.PHONY: bash-katacoda
+bash-katacoda: docker-build ## Open bash with katacoda cli installed
+	docker-compose run katacoda bash
 
-.PHONY: tmux
-tmux: docker-build ## Build container
-	docker-compose run base tmux
+.PHONY: bash-node
+bash-node: docker-build ## Open bash with katacoda cli installed
+	docker-compose run node bash

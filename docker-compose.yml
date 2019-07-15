@@ -1,7 +1,16 @@
-version: '3.3'
+version: '3.4'
 
 services:
-  base:
-    build: .
+  katacoda:
+    build: 
+      context: .
+      target: katacoda
+    volumes:
+      - .:/app/
+  
+  node:
+    build:
+      context: .
+      target: node
     volumes:
       - .:/app/
