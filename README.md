@@ -5,6 +5,10 @@
 This repository includes the source code for different Katacoda scenarios.
 Please see [README](doc/README.md) for usage information.
 
+## GitHub Pages
+
+The pages are deployed to [https://andreasaugustin.github.io/katacoda-scenarios/](https://andreasaugustin.github.io/katacoda-scenarios/)
+
 ## Contributing
 
 ### Commit messages
