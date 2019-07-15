@@ -71,3 +71,13 @@ This closes an issue when the branch is merged to master.
 ```bash
 git commit -m "(#1) close #1 :rocket:"
 ```
+
+## Development
+
+The project is built with `make`
+
+### Information about the make targets
+
+```bash
+make help
+```
