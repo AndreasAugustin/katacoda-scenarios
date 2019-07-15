@@ -1,5 +1,7 @@
 # Katacoda scenarios
 
+[![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](https://travis-ci.com/AndreasAugustin/katacoda-scenarios)
+
 ## Abstract
 
 This repository includes the source code for different Katacoda scenarios.
