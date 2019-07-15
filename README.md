@@ -1,5 +1,7 @@
 # Katacoda scenarios
 
+[![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](https://travis-ci.com/AndreasAugustin/katacoda-scenarios)
+
 ## Abstract
 
 This repository includes the source code for different Katacoda scenarios.
@@ -70,4 +72,28 @@ This closes an issue when the branch is merged to master.
 
 ```bash
 git commit -m "(#1) close #1 :rocket:"
+```
+
+## Development
+
+The project is built with `make`
+
+### Information about the make targets
+
+```bash
+make help
+```
+
+### Playground
+
+Docker is used for build environment.
+
+```bash
+make bash-node
+```
+
+or
+
+```bash
+makke bash-katacoda
 ```
