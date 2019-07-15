@@ -58,3 +58,12 @@ Feel free to add emojis to your message.
 | :heavy_plus_sign:          | `:heavy_plus_sign:`          | -                  | **add** files, dependencies, ... |
 | :heavy_minus_sign:         | `:heavy_minus_sign:`         | -                  | **remove** files, dependencies, ... |
 | :on:                       | `:on:`                       | -                  | **enable** feature and something ... |
+
+#### Closing issue
+
+For automation please see [closing-issues-using-keywords](https://help.github.com/en/articles/closing-issues-using-keywords)
+This closes an issue when the branch is merged to master.
+
+```bash
+git commit -m "(#1) close #1 :rocket:"
+```
