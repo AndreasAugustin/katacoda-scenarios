@@ -1,0 +1,28 @@
+version: '3.4'
+
+volumes:
+  .ssh:
+
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:4.1.0
+  git-server:
+    image: jkarlos/git-server-docker:latest
+    ports:
+      - "2222:22"
+    # volumes:
+    #   - ./git-server/keys:/git-server/keys
+    #   - ./git-server/repos:/git-server/repos
+    depends_on:
+      - "dev"
+  dev:
+    build: .
+    volumes:
+      - .ssh:/root/.ssh
+  test:
+    image: alpine
+    volumes:
+      - .ssh/id_rsa.pub:/root/.ssh/id_rsa.pub
+    depends_on:
+      - "dev"
+
