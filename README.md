@@ -1,6 +1,6 @@
 # Katacoda scenarios
 
-[![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](https://travis-ci.com/AndreasAugustin/katacoda-scenarios)
+[![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](https://travis-ci.com/AndreasAugustin/katacoda-scenarios) [![Join the chat at https://gitter.im/AndreasAugustin-katacoda-scenarios/community](https://badges.gitter.im/AndreasAugustin-katacoda-scenarios/community.svg)](https://gitter.im/AndreasAugustin-katacoda-scenarios/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Abstract
 
