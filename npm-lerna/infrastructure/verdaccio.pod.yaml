@@ -1,0 +1,19 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: verdaccio
+spec:
+  selector:
+    matchLabels:
+      app: verdaccio
+  replicas: 1 # tells deployment to run 1 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: verdaccio
+    spec:
+      containers:
+      - name: verdaccio
+        image: verdaccio/verdaccio:4.1.0
+        ports:
+        - containerPort: 4873

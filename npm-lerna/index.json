@@ -2,27 +2,25 @@
   "pathwayTitle": "NPM",
   "title": "NPM lerna basics",
   "description": "Learn how to manage packages with lerna",
-  "difficulty": "beginner",
-  "time": "5-10 minutes",
+  "difficulty": "intermediate",
+  "time": "10-20 minutes",
   "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "gitea", "port": 30002}, {"name": "verdaccio", "port": 30001}],
     "uilayout": "editor-terminal",
     "icon": "fa-node",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "node6"
+    "imageid": "kubernetes"
   },
-  "files": [
-    "packages/*"
-  ],
   "details": {
     "steps": [{
-      "title": "Step 1 - Run Command",
+      "title": "Step 1 - OPS setup",
       "text": "step1.md",
-      "answer": "answer1.md"
+      "code": "step1.sh"
     }],
     "intro": {
-      "code": "intro.sh",
       "text": "intro.md",
       "credits": "https://github.com/lerna/lerna"
     },

@@ -1,19 +1,21 @@
-# Init
+# OPS setup
 
-## GTS
+## Abstract
 
-We want to use *GTS* for managing our typescript project.
+We need to prepare the infrastructure.
+We use
 
-`npx gts init`{{execute}}
+- [gitea](https://gitea.io/en-us/)
+- [verdaccio](https://github.com/verdaccio/verdaccio)
 
-Accept with *Y*.
+in a kubernetes environment. The services are already up and running.
 
-## Lerna
+## Setup
 
-Install lerna as dev dependency.
+### Gitea
 
-`npm install lerna --save-dev`{{execute}}
+TODO:(anau) add OPS stuff setup documentation
 
-Init lerna.
+### Verdaccio
 
-`npx lerna init`{{execute}}
+TODO:(anau) add OPS stuff setup documentation
