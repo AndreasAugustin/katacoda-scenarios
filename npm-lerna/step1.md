@@ -14,8 +14,8 @@ in a kubernetes environment. The services are already up and running.
 
 ### Gitea
 
-TODO
+TODO:(anau) add OPS stuff setup documentation
 
 ### Verdaccio
 
-TODO
+TODO:(anau) add OPS stuff setup documentation
