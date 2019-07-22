@@ -17,12 +17,12 @@
   "details": {
     "steps": [{
       "title": "Step 1 - OPS setup",
-      "text": "step1.md",
-      "code": "step1.sh"
+      "text": "step1.md"
     }],
     "intro": {
       "text": "intro.md",
-      "credits": "https://github.com/lerna/lerna"
+      "credits": "https://github.com/lerna/lerna",
+      "courseData": "courseBase.sh"
     },
     "finish": {
       "text": "finish.md"
