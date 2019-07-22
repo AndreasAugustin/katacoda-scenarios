@@ -31,15 +31,15 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        { "file": "assets/courseBase.sh", "target": "/usr/local/bin/", "chmod": "+x" },
+        { "file": "assets/gitea.pod.yaml", "target": "/root/.env/" },
+        { "file": "assets/verdaccio.pod.yaml", "target": "/root/.env/" },
+        { "file": "assets/gitea.svc.yaml", "target": "/root/.env/" },
+        { "file": "assets/verdaccio.svc.yaml", "target": "/root/.env/" }
+      ]
     }
-  },
-  "assets": {
-    "host01": [
-      { "file": "assets/courseBase.sh", "target": "/usr/local/bin/", "chmod": "+x" },
-      { "file": "assets/gitea.pod.yaml", "target": "/root/.env/" },
-      { "file": "assets/verdaccio.pod.yaml", "target": "/root/.env/" },
-      { "file": "assets/gitea.svc.yaml", "target": "/root/.env/" },
-      { "file": "assets/verdaccio.svc.yaml", "target": "/root/.env/" }
-    ]
   }
 }
