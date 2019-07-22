@@ -38,7 +38,7 @@
           "file": "assets/verdaccio.svc.yml",
           "target": "~/"
         }
-      ]
+      ],
     "finish": {
       "text": "finish.md"
     }
