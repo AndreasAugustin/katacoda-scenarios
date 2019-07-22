@@ -5,6 +5,7 @@
   "difficulty": "intermediate",
   "time": "10-20 minutes",
   "environment": {
+    "hideintro": false,
     "showdashboard": true,
     "dashboards": [
       { "name": "gitea", "port": 30002 },
@@ -21,7 +22,8 @@
     "steps": [
       {
         "title": "Step 1 - OPS setup",
-        "text": "step1.md"
+        "text": "step1.md",
+        "code": "assets/courseBase.sh"
       }
     ],
     "intro": {
@@ -31,20 +33,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        { "file": "gitea.pod.yaml", "target": "/root/.env/" },
-        { "file": "assets/verdaccio.pod.yaml", "target": "/root/.env/" },
-        { "file": "gitea.svc.yaml", "target": "/root/.env/" },
-        { "file": "assets/verdaccio.svc.yaml", "target": "/root/.env/" }
-      ],
-      "client": [
-        { "file": "assets/gitea.pod.yaml", "target": "/root/.env/" },
-        { "file": "verdaccio.pod.yaml", "target": "/root/.env/" },
-        { "file": "assets/gitea.svc.yaml", "target": "/root/.env/" },
-        { "file": "verdaccio.svc.yaml", "target": "/root/.env/" }
-      ]
     }
   }
 }
