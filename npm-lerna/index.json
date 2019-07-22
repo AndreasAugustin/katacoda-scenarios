@@ -26,8 +26,7 @@
     ],
     "intro": {
       "text": "intro.md",
-      "credits": "https://github.com/lerna/lerna",
-      "code": "courseBase.sh"
+      "credits": "https://github.com/lerna/lerna"
     },
     "finish": {
       "text": "finish.md"
