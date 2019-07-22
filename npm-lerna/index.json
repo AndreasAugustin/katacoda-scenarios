@@ -26,7 +26,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "credits": "https://github.com/lerna/lerna"
+      "credits": "https://github.com/lerna/lerna",
+      "code": "assets/courseBase.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -34,11 +35,11 @@
   },
   "assets": {
     "host01": [
-      { "file": "courseBase.sh", "target": "/usr/local/bin/", "chmod": "+x" },
-      { "file": "gitea.pod.yaml", "target": "/root/.env/" },
-      { "file": "verdaccio.pod.yaml", "target": "/root/.env/" },
-      { "file": "gitea.svc.yaml", "target": "/root/.env/" },
-      { "file": "verdaccio.svc.yaml", "target": "/root/.env/" }
+      { "file": "assets/courseBase.sh", "target": "/usr/local/bin/", "chmod": "+x" },
+      { "file": "assets/gitea.pod.yaml", "target": "/root/.env/" },
+      { "file": "assets/verdaccio.pod.yaml", "target": "/root/.env/" },
+      { "file": "assets/gitea.svc.yaml", "target": "/root/.env/" },
+      { "file": "assets/verdaccio.svc.yaml", "target": "/root/.env/" }
     ]
   }
 }
