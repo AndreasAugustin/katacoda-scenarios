@@ -6,7 +6,10 @@
   "time": "10-20 minutes",
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "gitea", "port": 30002}, {"name": "verdaccio", "port": 30001}],
+    "dashboards": [
+      { "name": "gitea", "port": 30002 },
+      { "name": "verdaccio", "port": 30001 }
+    ],
     "uilayout": "editor-terminal",
     "icon": "fa-node",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
@@ -15,17 +18,24 @@
     "imageid": "kubernetes"
   },
   "details": {
-    "steps": [{
-      "title": "Step 1 - OPS setup",
-      "text": "step1.md"
-    }],
+    "steps": [
+      {
+        "title": "Step 1 - OPS setup",
+        "text": "step1.md"
+      }
+    ],
     "intro": {
       "text": "intro.md",
-      "credits": "https://github.com/lerna/lerna",
-      "courseData": "courseBase.sh"
+      "credits": "https://github.com/lerna/lerna"
     },
     "finish": {
       "text": "finish.md"
     }
+  },
+  "assets": {
+    "host01": [
+      { "file": "bin/courseBase.sh", "target": "/usr/local/bin/", "chmod": "+x" },
+      { "file": "etc/*", "target": "/usr/local/etc/" }
+    ]
   }
 }
