@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-kubectl apply -f infrastructure/gitea.pod.yaml
-kubectl apply -f infrastructure/verdaccio.pod.yaml
-kubectl apply -f infrastructure/gitea.svc.yaml
-kubectl apply -f infrastructure/verdaccio.svc.yaml
+DIR=$(dirname "$0")
+
+kubectl apply -f "${DIR}/assets/infrastructure/gitea.pod.yaml"
+kubectl apply -f "${DIR}/assets/infrastructure/verdaccio.pod.yaml"
+kubectl apply -f "${DIR}/assets/infrastructure/gitea.svc.yaml"
+kubectl apply -f "${DIR}/assets/infrastructure/verdaccio.svc.yaml"

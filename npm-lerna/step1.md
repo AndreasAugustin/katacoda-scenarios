@@ -16,10 +16,10 @@ in a kubernetes environment. The services are already up and running.
 
 TODO:(anau) add OPS stuff setup documentation
 
-![Gitea start screen](assets/gitea_start_screen.png)
+![Gitea start screen](assets/img/gitea_start_screen.png)
 
 ### Verdaccio
 
 TODO:(anau) add OPS stuff setup documentation
 
-![Verdaccio start screen](assets/verdaccio_start_screen.png)
+![Verdaccio start screen](assets/img/verdaccio_start_screen.png)

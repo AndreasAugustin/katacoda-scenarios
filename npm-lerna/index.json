@@ -27,13 +27,5 @@
     "finish": {
       "text": "finish.md"
     }
-  },
-  "assets": {
-    "host01": [
-      {
-        "file": "infrastructure/*",
-        "target": "~/infrastructure/"
-      }
-    ]
   }
 }
