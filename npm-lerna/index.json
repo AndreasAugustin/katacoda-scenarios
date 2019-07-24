@@ -43,12 +43,6 @@
       "text": "finish.md"
     },
     "assets": {
-      "node01": [
-        {
-          "file": "assets/gitea.svc.yml",
-          "target": "~/"
-        }
-      ],
       "client": [
         {
           "file": "verdaccio.pod.yml",
