@@ -22,24 +22,18 @@
     "steps": [
       {
         "title": "Step 1 - OPS setup",
-        "text": "step1.md",
-        "code": "assets/courseBase.sh"
+        "text": "step1.md"
       }
     ],
     "intro": {
       "text": "intro.md",
-      "credits": "https://github.com/lerna/lerna",
-      "code": "assets/courseBase.sh"
+      "credits": "https://github.com/lerna/lerna"
     },
     "finish": {
       "text": "finish.md"
     },
     "assets": {
       "node01": [
-        {
-          "file": "gitea.pod.yml",
-          "target": "~/"
-        },
         {
           "file": "assets/gitea.svc.yml",
           "target": "~/"
