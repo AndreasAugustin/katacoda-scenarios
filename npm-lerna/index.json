@@ -29,27 +29,13 @@
       "text": "intro.md",
       "credits": "https://github.com/lerna/lerna"
     },
-    "host01": [
-        {
-          "file": "assets/verdaccio.pod.yml",
-          "target": "~/"
-        },
-       {
-          "file": "assets/verdaccio.svc.yml",
-          "target": "~/"
-        }
-      ],
     "finish": {
       "text": "finish.md"
     },
     "assets": {
-      "client": [
+      "host01": [
         {
-          "file": "verdaccio.pod.yml",
-          "target": "~/"
-        },
-        {
-          "file": "assets/verdaccio.svc.yml",
+          "file": "gitea.pod.yaml",
           "target": "~/"
         }
       ]
