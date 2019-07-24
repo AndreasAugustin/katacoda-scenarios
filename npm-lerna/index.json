@@ -16,7 +16,7 @@
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "kubernetes"
+    "imageid": "minikube"
   },
   "details": {
     "steps": [
@@ -41,6 +41,28 @@
       ],
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "node01": [
+        {
+          "file": "gitea.pod.yml",
+          "target": "~/"
+        },
+        {
+          "file": "assets/gitea.svc.yml",
+          "target": "~/"
+        }
+      ],
+      "client": [
+        {
+          "file": "verdaccio.pod.yml",
+          "target": "~/"
+        },
+        {
+          "file": "assets/verdaccio.svc.yml",
+          "target": "~/"
+        }
+      ]
     }
   }
 }
