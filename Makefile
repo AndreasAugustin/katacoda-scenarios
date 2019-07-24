@@ -7,22 +7,18 @@ help:  ## help target to show available commands with information
 
 .PHONY: validate
 validate:  docker-build ## Validate the katacoda scenarios
-	docker-compose run katacoda katacoda validate-all
+	docker-compose run dev katacoda validate:all --repo=/app/
 
 .PHONY: markdownlint
 markdownlint: docker-build ## Validate markdown files
-	docker-compose run node markdownlint docs/
+	docker-compose run dev markdownlint docs/
 	# docker-compose run node markdownlint .github/
-	docker-compose run node markdownlint npm-lerna/
+	docker-compose run dev markdownlint npm-lerna/
 
 .PHONY: docker-build
 docker-build: ## Build Container
 	docker-compose build
 
-.PHONY: bash-katacoda
-bash-katacoda: docker-build ## Open bash with katacoda cli installed
-	docker-compose run katacoda bash
-
-.PHONY: bash-node
-bash-node: docker-build ## Open bash with katacoda cli installed
-	docker-compose run node bash
+.PHONY: bash
+bash: docker-build ## Open bash with dev dependencies installed
+	docker-compose run dev bash
