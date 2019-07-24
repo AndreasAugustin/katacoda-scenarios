@@ -45,10 +45,6 @@
     "assets": {
       "node01": [
         {
-          "file": "gitea.pod.yml",
-          "target": "~/"
-        },
-        {
           "file": "assets/gitea.svc.yml",
           "target": "~/"
         }
