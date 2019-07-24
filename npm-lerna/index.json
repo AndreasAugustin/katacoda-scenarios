@@ -35,7 +35,23 @@
     "assets": {
       "host01": [
         {
+          "file": "courseBase.sh",
+          "target": "~/assets/"
+        },
+        {
           "file": "gitea.pod.yaml",
+          "target": "~/assets/"
+        },
+        {
+          "file": "gitea.svc.yaml",
+          "target": "~/assets/"
+        },
+        {
+          "file": "verdaccio.pod.yaml",
+          "target": "~/assets/"
+        },
+        {
+          "file": "verdaccio.svc.yaml",
           "target": "~/assets/"
         }
       ]
