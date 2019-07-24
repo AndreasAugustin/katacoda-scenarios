@@ -29,6 +29,16 @@
       "text": "intro.md",
       "credits": "https://github.com/lerna/lerna"
     },
+    "host01": [
+        {
+          "file": "assets/verdaccio.pod.yml",
+          "target": "~/"
+        },
+       {
+          "file": "assets/verdaccio.svc.yml",
+          "target": "~/"
+        }
+      ],
     "finish": {
       "text": "finish.md"
     },
