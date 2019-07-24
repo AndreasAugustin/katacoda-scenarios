@@ -35,8 +35,8 @@
     "assets": {
       "host01": [
         {
-          "file": "gitea.pod.yaml",
-          "target": "~/"
+          "file": "*",
+          "target": "~/assets/"
         }
       ]
     }
