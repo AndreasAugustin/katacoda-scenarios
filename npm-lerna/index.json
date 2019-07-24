@@ -22,15 +22,23 @@
     "steps": [
       {
         "title": "Step 1 - OPS setup",
-        "text": "step1.md",
-        "code": "assets/courseBase.sh"
+        "text": "step1.md"
       }
     ],
     "intro": {
       "text": "intro.md",
-      "credits": "https://github.com/lerna/lerna",
-      "code": "assets/courseBase.sh"
+      "credits": "https://github.com/lerna/lerna"
     },
+    "host01": [
+        {
+          "file": "assets/verdaccio.pod.yml",
+          "target": "~/"
+        },
+       {
+          "file": "assets/verdaccio.svc.yml",
+          "target": "~/"
+        }
+      ],
     "finish": {
       "text": "finish.md"
     },
