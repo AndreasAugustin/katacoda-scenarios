@@ -35,8 +35,9 @@
     "assets": {
       "host01": [
         {
-          "file": "courseBase.sh",
-          "target": "~/assets/"
+          "file": "setup_env.sh",
+          "target": "~/assets/",
+          "chmod": "+x"
         },
         {
           "file": "gitea.pod.yaml",
