@@ -8,10 +8,15 @@ We use
 - [gitea](https://gitea.io/en-us/)
 - [verdaccio](https://github.com/verdaccio/verdaccio)
 
-in a `docker-compose` environment. 
-The services are already up and running.
+in a `docker-compose` environment.
 
 ## Setup
+
+### docker-compose
+
+Setup environment
+
+`./assets/setup_env.sh`{{execute}}
 
 ### Gitea
 

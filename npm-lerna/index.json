@@ -22,8 +22,7 @@
     "steps": [
       {
         "title": "Step 1 - OPS setup",
-        "text": "step1.md",
-        "code": "assets/setup_env.sh"
+        "text": "step1.md"
       }
     ],
     "intro": {
