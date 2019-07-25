@@ -34,11 +34,5 @@ make help
 Docker is used for build environment.
 
 ```bash
-make bash-node
-```
-
-or
-
-```bash
-makke bash-katacoda
+make bash
 ```
