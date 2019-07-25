@@ -8,20 +8,15 @@ We use
 - [gitea](https://gitea.io/en-us/)
 - [verdaccio](https://github.com/verdaccio/verdaccio)
 
-in a kubernetes environment. The services are already up and running.
+in a `docker-compose` environment.
 
 ## Setup
 
-### Minikube
+### docker-compose
 
-Kubernetes with minikube is used.
-The **services** and **pods** files are located in [assets](assets/)
-directory.
-A simple bash script is prepared.
-Execute `./assets/setup_env.sh`{{execute HOST1}}
+Setup environment
 
-This starts `minikube` and the services and pods.
-The `minikube start` command takes some time, please be patient (max 1 minute).
+`./assets/setup_env.sh`{{execute}}
 
 ### Gitea
 

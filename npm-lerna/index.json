@@ -40,19 +40,7 @@
           "chmod": "+x"
         },
         {
-          "file": "gitea.pod.yaml",
-          "target": "~/assets/"
-        },
-        {
-          "file": "gitea.svc.yaml",
-          "target": "~/assets/"
-        },
-        {
-          "file": "verdaccio.pod.yaml",
-          "target": "~/assets/"
-        },
-        {
-          "file": "verdaccio.svc.yaml",
+          "file": "docker-compose.yml",
           "target": "~/assets/"
         }
       ]
