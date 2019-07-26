@@ -6,6 +6,13 @@
     https://badges.gitter.im/AndreasAugustin-katacoda-scenarios/community.svg)](
         https://gitter.im/AndreasAugustin-katacoda-scenarios/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![GitHub](https://img.shields.io/github/license/AndreasAugustin/katacoda-scenarios)](
+    LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/AndreasAugustin/katacoda-scenarios)](
+    https://github.com/AndreasAugustin/katacoda-scenarios/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/AndreasAugustin/katacoda-scenarios)](
+    .github/CONTRIBUTING.md)
+
 ## Abstract
 
 This repository includes the source code for different Katacoda scenarios.
