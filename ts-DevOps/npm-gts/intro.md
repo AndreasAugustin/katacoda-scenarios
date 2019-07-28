@@ -7,7 +7,7 @@ There is a lot of work ongoing. The scenario is still under development.
 
 ## Abstract
 
-This course is about NPM package managing with lerna.
+The purpose of this scenario is to learn the basics for [gts](https://www.npmjs.com/package/gts).
 
 ## Issues
 
