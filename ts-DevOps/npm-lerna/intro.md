@@ -7,7 +7,7 @@ There is a lot of work ongoing. The scenario is still under development.
 
 ## Abstract
 
-This course is about NPM package managing with lerna.
+This scenario is about NPM package managing with lerna.
 
 ## Issues
 
