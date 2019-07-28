@@ -2,5 +2,10 @@
   "title": "typescript DevOps with node",
   "description": "learn basic DevOps for typescript",
   "courses": [
+    {
+      "course_id": "npm-gts",
+      "title": "npm-gts",
+      "description": "Scenario for learning gts"
+    }
   ]
 }
