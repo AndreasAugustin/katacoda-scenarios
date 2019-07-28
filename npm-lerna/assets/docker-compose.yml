@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:4.1.0
+    ports:
+      - 30001:4873
+  gitea:
+    image: gitea/gitea:1.8.3
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    ports:
+      - "30002:3000"
+      #- "222:22"
+

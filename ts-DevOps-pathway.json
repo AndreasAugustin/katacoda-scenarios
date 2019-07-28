@@ -6,11 +6,6 @@
       "course_id": "npm-lerna",
       "title": "NPM lerna basics",
       "description": "Learn how to manage packages with lerna"
-    },
-    {
-      "course_id": "npm-gts",
-      "title": "npm-gts",
-      "description": "use gts with npm"
     }
   ]
 }
