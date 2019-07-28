@@ -11,9 +11,8 @@ validate:  docker-build ## Validate the katacoda scenarios
 
 .PHONY: markdownlint
 markdownlint: docker-build ## Validate markdown files
-	docker-compose run dev markdownlint docs/
-	# docker-compose run node markdownlint .github/
-	docker-compose run dev markdownlint npm-lerna/
+	# docker-compose run dev markdownlint .github/
+	docker-compose run dev markdownlint .
 
 .PHONY: docker-build
 docker-build: ## Build Container
