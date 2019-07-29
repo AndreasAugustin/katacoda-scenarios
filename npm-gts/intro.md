@@ -1,4 +1,4 @@
-# Intro
+# GoogleTypescript with npm
 
 ![WIP](https://img.shields.io/badge/status-WIP-blue)
 There is a lot of work ongoing. The scenario is still under development.
@@ -7,7 +7,9 @@ There is a lot of work ongoing. The scenario is still under development.
 
 ## Abstract
 
-The purpose of this scenario is to learn the basics for [gts](https://www.npmjs.com/package/gts).
+The purpose of this scenario is to learn the basics for
+[gts](
+    https://www.npmjs.com/package/gts).
 
 ## Issues
 
