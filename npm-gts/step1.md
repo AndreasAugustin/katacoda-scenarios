@@ -1,4 +1,4 @@
-# Google Typescript
+# Basic setup
 
 First we need to init our **npm** project for **typescript**.
 
@@ -11,14 +11,6 @@ You get some stuff here:
 - Lint checker with google typescript style conventions in **tslint.json**
 - Formatter options for google typescript style conventions in **prettier.conf.js**
 
-If you open **package.json** in the editor you see that some basic scripts are defined
-
-`npm run compile`{{execute}}
-
-`npm run clean`{{execute}}
-
-`npm run check`{{dexecute}}
-
-`npm run fix`{{execute}}
-
-Just play around a bit and have some fun :rocket .
+The style settings are taken from
+[![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](
+    https://github.com/google/gts)
