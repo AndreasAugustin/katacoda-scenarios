@@ -45,6 +45,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "javascript"
+    "imageid": "ubuntu"
   }
 }
