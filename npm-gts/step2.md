@@ -6,6 +6,9 @@ If you open **package.json** in the editor you see that some basic scripts are d
 
 In **tsconfig.json** the files to compile are defined in **src/** and **test/** folder.
 Also the build artefacts directory is set there to **build/**.
+
+`cat ~/.gitignore`{{execute}}
+
 Because you don't want to checkin the build artefacts into your *VCS* the *build/*
 folder is excluded in the *.gitignore*
 
