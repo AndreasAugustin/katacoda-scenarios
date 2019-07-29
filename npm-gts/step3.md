@@ -12,7 +12,8 @@ We need to install those libs.
 
 `npm i -D chai mocha nyc ts-node`{{execute}}
 
-Because we also need the types declaration files for typescript, we also need to install those
+Because we also need the types declaration files for typescript,
+we also need to install those
 
 `npm i -D @types/mocha @types/chai`{{execute}}
 

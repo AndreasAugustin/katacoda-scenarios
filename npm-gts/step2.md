@@ -6,7 +6,8 @@ If you open **package.json** in the editor you see that some basic scripts are d
 
 In **tsconfig.json** the files to compile are defined in **src/** and **test/** folder.
 Also the build artefacts directory is set there to **build/**.
-Because you don't want to checkin the build artefacts into your *VCS* the *build/* folder is excluded in the *.gitignore*
+Because you don't want to checkin the build artefacts into your *VCS* the *build/*
+folder is excluded in the *.gitignore*
 
 `npm run clean`{{execute}}
 
@@ -21,7 +22,8 @@ checks.
 
 `npm run fix`{{execute}}
 
-If you have some tslint error, then just run this command to automatically fix some of the issues.
+If you have some tslint error, then just run this command to automatically
+fix some of the issues.
 
 Just test it:
 
