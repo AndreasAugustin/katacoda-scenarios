@@ -30,7 +30,7 @@ git config --global --replace-all user.email "${EMAIL}"
 # Prepare Gitea
 echo "-------------- prepare gitea environment"
 
-#${DOCKER_COMPOSE_CMD} exec -u git gitea gitea admin create-user --name="${USERNAME}" --password="${PASSWORD}" --email "${EMAIL}"
+${DOCKER_COMPOSE_CMD} exec -u git gitea gitea admin create-user --name="${USERNAME}" --password="${PASSWORD}" --email "${EMAIL}"
 
 curl -X POST \
     "${GITEA_URL}/api/v1/user/repos" \
