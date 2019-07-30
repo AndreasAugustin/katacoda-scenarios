@@ -42,6 +42,10 @@
         {
           "file": "docker-compose.yml",
           "target": "~/assets/"
+        },
+        {
+          "file": "app.ini",
+          "target": "~/assets/"
         }
       ]
     }
