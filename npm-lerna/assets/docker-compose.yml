@@ -7,10 +7,12 @@ services:
       - 30001:4873
   gitea:
     image: gitea/gitea:1.8.3
-    environment:
-      - USER_UID=1000
-      - USER_GID=1000
+    # environment:
+    #   - DISABLE_SSH=true
+    #   - ROOT_URL=http://localhost:30002/
+    #   - DISABLE_REGISTRATION=true
+    volumes:
+      - ./app.ini:/data/gitea/conf/app.ini
     ports:
       - "30002:3000"
-      #- "222:22"
 
