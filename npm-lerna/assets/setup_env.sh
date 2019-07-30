@@ -7,8 +7,10 @@ DIR=$(dirname "$0")
 ROOT_DIR="${DIR}/.."
 GIT_DIR="${ROOT_DIR}/git"
 DOCKER_COMPOSE_CMD="docker-compose -f ${DIR}/docker-compose.yml"
-USERNAME=$(git config --global user.name) || "john.doe"
-EMAIL=$(git config --global user.email) || "john.doe@random.me"
+SET_GIT_USERNAME=$(git config --global user.name)
+SET_GIT_EMAIL=$(git config --global user.email)
+USERNAME="${SET_GIT_USERNAME:-john.doe}"
+EMAIL="${SET_GIT_EMAIL:-john.doe@random.me}"
 PASSWORD=secret
 GITEA_URL="http://localhost:30002"
 
@@ -19,7 +21,7 @@ echo "email set to: ${EMAIL}"
 #   Comands
 #####################
 echo "-------------- starting docker container"
-#${DOCKER_COMPOSE_CMD} up -d
+${DOCKER_COMPOSE_CMD} up -d
 
 # Prepare git
 echo "-------------- prepare git"
