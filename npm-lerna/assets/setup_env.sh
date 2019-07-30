@@ -34,6 +34,9 @@ echo "-------------- prepare gitea environment"
 
 ${DOCKER_COMPOSE_CMD} exec -u git gitea gitea admin create-user --name="${USERNAME}" --password="${PASSWORD}" --email "${EMAIL}"
 
+# HACK: Wait for user creation finish. Else possible race condition.
+sleep 5
+
 curl -X POST \
     "${GITEA_URL}/api/v1/user/repos" \
     -H "accept: application/json" \
