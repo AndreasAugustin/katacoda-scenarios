@@ -13,6 +13,8 @@ USERNAME="${SET_GIT_USERNAME:-john.doe}"
 EMAIL="${SET_GIT_EMAIL:-john.doe@random.me}"
 PASSWORD=secret
 GITEA_URL="http://localhost:30002"
+VERDACCIO_URL="http://localhost:30001"
+REPO_NAME="npm-lerna"
 
 echo "username set to: ${USERNAME}"
 echo "email set to: ${EMAIL}"
@@ -41,11 +43,21 @@ curl -X POST \
     "${GITEA_URL}/api/v1/user/repos" \
     -H "accept: application/json" \
     -H "Content-Type: application/json" \
-    -d "{ \"auto_init\": true, \"description\": \"Lerna tutorial\", \"gitignores\": \"Node\", \"license\": \"MIT\", \"name\": \"npm-lerna\", \"private\": false, \"readme\": \"Default\"}" \
+    -d "{ \"auto_init\": true, \"description\": \"Lerna tutorial\", \"gitignores\": \"Node\", \"license\": \"MIT\", \"name\": \"${REPO_NAME}\", \"private\": false, \"readme\": \"Default\"}" \
     -u "${USERNAME}:${PASSWORD}"
 
 # init local repo
 mkdir -p "${GIT_DIR}"
 pushd "${GIT_DIR}" || exit
-git clone "${GITEA_URL}/${USERNAME}"/npm-lerna.git
+git clone "${GITEA_URL}/${USERNAME}/${REPO_NAME}.git"
 popd || exit
+
+# Prepare verdaccio
+echo "--------------------- prepare verdaccio environment"
+docker run \
+    -e NPM_USER="${USERNAME}" \
+    -e NPM_PASS="${PASSWORD}" \
+    -e NPM_EMAIL="${EMAIL}" \
+    -e NPM_REGISTRY="${VERDACCIO_URL}" \
+    bravissimolabs/generate-npm-authtoken \
+    >> ~/git/"${REPO_NAME}"/.npmrc
