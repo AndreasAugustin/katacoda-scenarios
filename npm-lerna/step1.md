@@ -1,4 +1,4 @@
-# OPS setup
+# DevOps setup
 
 ## Abstract
 
@@ -47,4 +47,10 @@ Use the same username and password as before.
 
 ![Verdaccio start screen](assets/verdaccio_start_screen.png)
 
-There is a *.npmrc* created in *git/npm-lerna*
+There is a *.npmrc* created in *~/*.
+
+`cat .npmrc`{{execute}}
+
+For validating that we are logged in run
+
+`npm whoami --registry http://localhost:30001`{{execute}}
