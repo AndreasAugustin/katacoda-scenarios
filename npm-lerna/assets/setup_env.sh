@@ -54,10 +54,9 @@ popd || exit
 
 # Prepare verdaccio
 echo "--------------------- prepare verdaccio environment"
-docker run \
-    -e NPM_USER="${USERNAME}" \
-    -e NPM_PASS="${PASSWORD}" \
-    -e NPM_EMAIL="${EMAIL}" \
-    -e NPM_REGISTRY="${VERDACCIO_URL}" \
-    bravissimolabs/generate-npm-authtoken \
-    >> ~/git/"${REPO_NAME}"/.npmrc
+npm install -g npm-cli-adduser
+
+export NPM_USER=${USERNAME}
+export NPM_PASS=${PASSWORD}
+export NPM_EMAIL=${EMAIL}
+npx npm-cli-adduser --registry ${VERDACCIO_URL}
