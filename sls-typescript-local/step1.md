@@ -21,21 +21,27 @@ The style settings are taken from
 Just try it out
 
 `npm run check`{{execute}}
+
 Fix the lint errors:
+
 `npm run fix`{{execute}}
+
 Test again
+
 `npm run check`{{execute}}
 
 Now we need to install serverless.
 We use sls with a template here.
 
 `npm install -D serverless`{{execute}}
+
 `npx sls create --template aws-nodejs`{{execute}}
+
 `npm ci`{{execute}}
 
 Because *handler.js* is no valid typescript we need to adjust it a bit.
 To keep it easy we just create a new file
-`touch /src/handler.ts/`{{execute}}
+`touch src/handler.ts/`{{execute}}
 and delete the javascript handler
 `rm handler.js`{{execute}}
 
