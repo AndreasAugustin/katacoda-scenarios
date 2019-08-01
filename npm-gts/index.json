@@ -1,6 +1,6 @@
 {
-  "title": "npm-gts",
-  "description": "use gts with npm",
+  "title": "npm and typescript with gts",
+  "description": "build typescript with npm and gts",
   "difficulty": "Beginner",
   "time": "5-10 minutes",
   "details": {
