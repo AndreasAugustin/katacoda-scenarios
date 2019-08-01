@@ -59,7 +59,8 @@ export const hello = async (event: {}): Promise<{
   };
 
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
+  // return { message: 'Go Serverless v1.0!
+  // Your function executed successfully!', event };
 };
 ```
 
@@ -104,7 +105,8 @@ npx sls invoke local -f hello
 Please keep in mind that you need to build `npm run compile`{{execute}} before
 you are able to invoke the code.
 
-Without the *local* you call the deployed lambda at AWS but this is not part of the scenario.
+Without the *local* you call the deployed lambda at AWS but this is not
+part of the scenario.
 
 Now we also want to test the API. Therefore we install
 [serverless-offline](
