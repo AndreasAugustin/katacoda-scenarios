@@ -1,6 +1,6 @@
 {
-  "title": "npm-gts",
-  "description": "use gts with npm",
+  "title": "sls typescript local development",
+  "description": "use serverless with typescript in local development",
   "difficulty": "Beginner",
   "time": "5-10 minutes",
   "details": {
