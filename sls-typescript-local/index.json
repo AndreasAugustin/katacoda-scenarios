@@ -1,0 +1,34 @@
+{
+  "title": "npm-gts",
+  "description": "use gts with npm",
+  "difficulty": "Beginner",
+  "time": "5-10 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Basic setup",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": ".gitignore",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
