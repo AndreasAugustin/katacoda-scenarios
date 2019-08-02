@@ -145,8 +145,14 @@ Please see the
 [documentation](
   https://www.npmjs.com/package/serverless-offline)
 for configuration details
-  
-`npx sls offline`{{execute}}
+
+You can start the container at host in another terminal
+
+`npx sls offline`{{execute T2}}
+
+Or you can start it with docker in detached mode
+
+`docker run -v="${PWD}:/app/" -p="3000:3000" -w="/app/" node:12.7-alpine npx sls offline`{{execute}}
 
 now you are able to query the API
 
