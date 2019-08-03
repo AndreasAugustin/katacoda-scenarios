@@ -10,6 +10,10 @@ Check
 
 Should be reveal `/root/git/npm-lerna`.
 
+Because we have a *npm* project we should create a `.gitignore`.
+
+`echo node_modules/ > .gitignore`{{execute}}
+
 First we want to init our npm project.
 
 `npm init`{{execute}}
@@ -46,7 +50,7 @@ Because we want to have a typescript package we choose another way.
 
 `mkdir packages/foo`{{execute}}
 
-`cd ~/git/npm-lerna/package/foo`{{execute}}
+`cd ~/git/npm-lerna/packages/foo`{{execute}}
 
 `npx gts init`{{execute}}
 
@@ -59,7 +63,7 @@ Because we want to use our *npm registry* and we want to publish a lib copy
 },
 "publishConfig": {
   "registry": "http://localhost:30001"
-}
+},
 ```
 
 to `package.json` before the **script tag**.
@@ -101,3 +105,26 @@ for a stream output.
 If you want to run a script in a single package use
 
 `npx lerna run --scope @npm-lerna/foo check`{{execute}}
+
+To save our process we should commit and push the stuff.
+
+`cd ~/git/nom-lerna`{{execute}}
+
+`git status`{{execute}}
+
+`git add .`{{execute}}
+
+`git commit -m "add 2 typescript lerna projects"`{{execute}}
+
+`git push`{{execute}}
+
+If you forgot your username:
+
+`git config --global user.name`{{execute}}
+
+and password: **secret**
+
+Move to gitea to see the changes. Either click the
+*gitea* tab in terminal or
+[gitea](
+    https://[[HOST_SUBDOMAIN]]-30002-[[KATACODA_HOST]].environments.katacoda.com/)
