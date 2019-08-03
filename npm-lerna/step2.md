@@ -50,7 +50,7 @@ Because we want to have a typescript package we choose another way.
 
 `mkdir packages/foo`{{execute}}
 
-`cd ~/git/npm-lerna/package/foo`{{execute}}
+`cd ~/git/npm-lerna/packages/foo`{{execute}}
 
 `npx gts init`{{execute}}
 
@@ -63,7 +63,7 @@ Because we want to use our *npm registry* and we want to publish a lib copy
 },
 "publishConfig": {
   "registry": "http://localhost:30001"
-}
+},
 ```
 
 to `package.json` before the **script tag**.
@@ -125,6 +125,6 @@ If you forgot your username:
 and password: **secret**
 
 Move to gitea to see the changes. Either click the
-verdaccio tab in terminal or
-[Verdaccio](
-    https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/)
+*gitea* tab in terminal or
+[gitea](
+    https://[[HOST_SUBDOMAIN]]-30002-[[KATACODA_HOST]].environments.katacoda.com/)
