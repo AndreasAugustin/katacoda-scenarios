@@ -152,7 +152,9 @@ You can start the container at host in another terminal
 
 Or you can start it with docker in detached mode
 
-`docker run -v="${PWD}:/app/" -p="3000:3000" -w="/app/" node:12.7-alpine npx sls offline`{{execute}}
+```bash
+docker run -v="${PWD}:/app/" -p="3000:3000" -w="/app/" node:12.7-alpine npx sls offline
+```
 
 now you are able to query the API
 

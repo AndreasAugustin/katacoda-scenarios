@@ -27,8 +27,11 @@
       {
         "title": "Step 2 - Lerna basics",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Lerna versioning and publishing",
+        "text": "step3.md"
       }
-
     ],
     "intro": {
       "text": "intro.md",
