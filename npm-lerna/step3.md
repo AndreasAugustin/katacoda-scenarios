@@ -32,5 +32,4 @@ Build the project foo
 
 `npx lerna run --scope @npm-lerna/foo compile`{{execute}}
 
-
 TODO(anau): add content for npx lerna publish
