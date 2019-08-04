@@ -1,9 +1,6 @@
 # Npm with lerna
 
-There is a lot of work ongoing.
-The scenario is still under development.
-
-![WIP](https://img.shields.io/badge/status-WIP-blue)
+If you want to subscribe to changes please subscribe
 [![GitHub watchers](https://img.shields.io/github/watchers/AndreasAugustin/katacoda-scenarios?label=Watch&style=social)](
     https://github.com/AndreasAugustin/katacoda-scenarios/watchers)
 
