@@ -6,6 +6,7 @@ Lerna is working hardly connected to git. Let's see
 
 `npx lerna version`{{execute}}
 
+*Lerna* is using [semantic versioning](https://semver.org/).
 Choose minor version and y.
 You see that you need to login with your git credentials.
 If you check on
@@ -32,4 +33,90 @@ Build the project foo
 
 `npx lerna run --scope @npm-lerna/foo compile`{{execute}}
 
-TODO(anau): add content for npx lerna publish
+Now we want to use the compiled lib in the *bar* project.
+
+`npx lerna add @npm-lerna/foo projects/bar`{{execute}}
+
+Check the content of *bar* `package.json`
+
+`cat projects/bar/package.json`{{execute}}
+
+Replace the content of `packages/foo/src/index.ts` with
+
+```ts
+import {add} from '@npm-lerna/foo'
+
+export const calc = () => {
+  const res = add(1, 2);
+
+  return res;
+};
+
+```
+
+Check if it compiles
+
+`cd ~/git/npm-lerna`{{execute}}
+
+`npx lerna run compile`{{execute}}
+
+Now we use *foo* in our project *bar*.
+
+Let's persist our change
+
+`cd ~/git/npm-lerna`{{execute}}
+
+`git status`{{execute}}
+
+`git add .`{{execute}}
+
+`git commit -m "Some project implementation"`{{execute}}
+
+Also we want to publish our node project to
+[verdaccio](
+  https://[[HOST_SUBDOMAIN]]-30002-[[KATACODA_HOST]].environments.katacoda.com/)
+
+`npx lerna publish`{{execute}}
+
+Click the verdaccio tab in the terminal or the link above to see the stuff we published.
+
+Now we also want to have a function for subtraction.
+Add to *foo*`packages/foo/src/index.ts`
+
+```ts
+export const sub = (a: number, b: number): number => {
+  return a - b;
+}
+
+```
+
+And change `packages/foo/src/index.ts` to
+
+```ts
+import {add, sub} from '@npm-lerna/foo'
+
+export const calc = () => {
+  const res1 = add(1, 2);
+  const res2 = sub(res1, 3);
+
+  return res3;
+};
+
+```
+
+Now lets compile it (will have an error)
+
+`cd ~/git/npm-lerna`{{execute}}
+
+`npx lerna run compile`{{execute}}
+
+As you can see, the project *bar* has still the old version of *foo*.
+We need to `bootstrap` the project to receive the actual stuff.
+
+`npx lerna bootstrap`{{execute}}
+
+This is also needed, when you clone a project from **git**.
+
+Now let's `publish` again.
+
+`npx lerna publish`{{execute}}
