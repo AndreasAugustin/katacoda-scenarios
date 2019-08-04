@@ -41,7 +41,7 @@ We use sls with a template here.
 
 Because *handler.js* is no valid typescript we need to adjust it a bit.
 To keep it easy we just create a new file
-`touch src/handler.ts/`{{execute}}
+`touch src/handler.ts`{{execute}}
 and delete the javascript handler
 `rm handler.js`{{execute}}
 
@@ -104,9 +104,7 @@ you get an artifact folder *.serverless* with a built cloudformation template.
 
 Now we want to test the lambda locally:
 
-```bash
-npx sls invoke local -f hello
-```
+`npx sls invoke local -f hello`{{execute}}
 
 Please keep in mind that you need to build `npm run compile`{{execute}} before
 you are able to invoke the code.
@@ -146,7 +144,8 @@ Please see the
   https://www.npmjs.com/package/serverless-offline)
 for configuration details
 
-You can start the container at host in another terminal
+You can start the container at host in **another terminal**
+(will be opened automatically)
 
 `npx sls offline`{{execute T2}}
 
@@ -156,9 +155,10 @@ Or you can start it with docker in detached mode
 docker run -v="${PWD}:/app/" -p="3000:3000" -w="/app/" node:12.7-alpine npx sls offline
 ```
 
-now you are able to query the API
+now you are able to query the API in the **first terminal**
+(switch back will be automatically)
 
-`curl -X GET http://localhost:3000/hello`{{execute}}
+`curl -X GET http://localhost:3000/hello`{{execute T1}}
 
 You can see that the event in the lambda is getting a lot of parameter.
 
@@ -199,6 +199,7 @@ describe('simple test example', () => {
     expect(res.statusCode).to.be.eqls(expected);
   });
 });
+
 ```
 
 to *test/handler.spec.ts*
@@ -206,9 +207,13 @@ to *test/handler.spec.ts*
 Please change the *script* part in *package.json*.
 Add/Change the following (leave the other script parts).
 
+Let's fix some style errors
+
+`npm run fix`{{execute}}
+
 ```json
-"test": "mocha -r ts-node/register test/**/*.spec.ts",
-"test:coverage": "nyc npm run test"
+"test": "mocha -r ts-node/register test/*.spec.ts",
+"test:coverage": "nyc npm run test",
 ```
 
 Now you have 2 more run comands
@@ -216,6 +221,23 @@ Now you have 2 more run comands
 `npm run test`{{execute}}
 
 This runs the tests.
+
+We are using nyc as a coverage tool. To configure it copy
+
+```json
+"nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "all": true  
+  }
+```
+
+to your package.json.
 
 `npm run test:coverage`{{execute}}
 
