@@ -7,7 +7,7 @@ Lerna is working hardly connected to git. Let's see
 `npx lerna version`{{execute}}
 
 *Lerna* is using [semantic versioning](https://semver.org/).
-Choose minor version and y.
+Choose **minor** version and y.
 You see that you need to login with your git credentials.
 If you check on
 [gitea](
@@ -29,19 +29,25 @@ Return to lerna root
 
 `cd ~/git/npm-lerna`{{execute}}
 
+Let's fix some style issues
+
+`npx lerna run fix`{{execute}}
+
 Build the project foo
 
 `npx lerna run --scope @npm-lerna/foo compile`{{execute}}
 
 Now we want to use the compiled lib in the *bar* project.
 
-`npx lerna add @npm-lerna/foo projects/bar`{{execute}}
+`npx lerna add @npm-lerna/foo packages/bar`{{execute}}
 
 Check the content of *bar* `package.json`
 
-`cat projects/bar/package.json`{{execute}}
+`cat packages/bar/package.json`{{execute}}
 
-Replace the content of `packages/foo/src/index.ts` with
+You see that there is a new dependency added to *foo*.
+
+Replace the content of `packages/bar/src/index.ts` with
 
 ```ts
 import {add} from '@npm-lerna/foo'
@@ -54,9 +60,15 @@ export const calc = () => {
 
 ```
 
-Check if it compiles
+Go back to npm-lerna root
 
 `cd ~/git/npm-lerna`{{execute}}
+
+Fix some lint errors
+
+`npx lerna run fix`{{execute}}
+
+Check if it compiles
 
 `npx lerna run compile`{{execute}}
 
@@ -74,9 +86,9 @@ Let's persist our change
 
 Also we want to publish our node project to
 [verdaccio](
-  https://[[HOST_SUBDOMAIN]]-30002-[[KATACODA_HOST]].environments.katacoda.com/)
+  https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/)
 
-`npx lerna publish`{{execute}}
+`npx lerna publish --registry http://localhost:30001`{{execute}}
 
 Click the verdaccio tab in the terminal or the link above to see the stuff we published.
 
@@ -90,7 +102,7 @@ export const sub = (a: number, b: number): number => {
 
 ```
 
-And change `packages/foo/src/index.ts` to
+And change `packages/bar/src/index.ts` to
 
 ```ts
 import {add, sub} from '@npm-lerna/foo'
@@ -99,7 +111,7 @@ export const calc = () => {
   const res1 = add(1, 2);
   const res2 = sub(res1, 3);
 
-  return res3;
+  return res2;
 };
 
 ```

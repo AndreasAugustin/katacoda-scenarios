@@ -14,6 +14,8 @@ Because we have a *npm* project we should create a `.gitignore`.
 
 `echo node_modules/ > .gitignore`{{execute}}
 
+`echo build/ >> .gitignore`{{execute}}
+
 First we want to init our npm project.
 
 `npm init`{{execute}}
@@ -37,9 +39,7 @@ You get a `packages/` dir and a `lerna.json`
 
 The packages folder is empty.
 
-*Remark**
-
-It is possible to create a project by cli.
+**Remark** it is possible to create a project by cli.
 
 ```bash
 # we use another way, do not execute
@@ -108,7 +108,7 @@ If you want to run a script in a single package use
 
 To save our process we should commit and push the stuff.
 
-`cd ~/git/nom-lerna`{{execute}}
+`cd ~/git/npm-lerna`{{execute}}
 
 `git status`{{execute}}
 
