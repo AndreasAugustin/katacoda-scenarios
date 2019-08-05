@@ -8,6 +8,14 @@
       {
         "title": "Basic setup",
         "text": "step1.md"
+      },
+      {
+        "title": "Invoke API",
+        "text": "step2.md"
+      },
+      {
+        "title": "Testing",
+        "text": "step3.md"
       }
     ],
     "intro": {
