@@ -4,8 +4,18 @@
   "courses": [
     {
       "course_id": "npm-gts",
-      "title": "npm-gts",
-      "description": "Scenario for learning gts"
+      "title": "npm and typescript with gts",
+      "description": "build typescript with npm and gts"
+    },
+    {
+      "course_id": "npm-lerna",
+      "title": "NPM lerna basics",
+      "description": "Learn how to manage packages with lerna"
+    },
+    {
+      "course_id": "sls-typescript-local",
+      "title": "sls typescript local development",
+      "description": "use serverless with typescript in local development"    
     }
   ]
 }

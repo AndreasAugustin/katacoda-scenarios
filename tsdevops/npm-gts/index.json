@@ -1,13 +1,21 @@
 {
-  "title": "npm-gts",
-  "description": "use gts with npm",
+  "title": "npm and typescript with gts",
+  "description": "build typescript with npm and gts",
   "difficulty": "Beginner",
   "time": "5-10 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Basic setup",
         "text": "step1.md"
+      },
+      {
+        "title": "npm scripts",
+        "text": "step2.md"
+      },
+      {
+        "title": "npm tests",
+        "text": "step3.md"
       }
     ],
     "intro": {
@@ -15,12 +23,28 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.ts",
+          "target": "~/src/"
+        },
+        {
+          "file": "index.spec.ts",
+          "target": "~/test/"
+        },
+        {
+          "file": ".gitignore",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "javascript"
+    "imageid": "ubuntu"
   }
 }
