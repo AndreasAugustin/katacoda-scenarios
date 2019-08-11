@@ -1,4 +1,4 @@
-# OPS setup
+# DevOps setup
 
 ## Abstract
 
@@ -20,18 +20,37 @@ Setup environment
 
 ### Gitea
 
+In the former script a git user was created.
+To receive the name use
+
+`git config --global user.name`{{execute}}
+
+with the **password: secret**.
+
 To access [Gitea](https://[[HOST_SUBDOMAIN]]-30002-[[KATACODA_HOST]].environments.katacoda.com/)
 click on the **gitea** tab in the console.
 
-TODO:(anau) add OPS stuff setup documentation
-
 ![Gitea start screen](assets/gitea_start_screen.png)
+
+Click login and use the username and password.
+As you can see there is alread a repository created.
+That one is cloned into the *git/npm-lerna* folder.
+All this was done in the setup script.
 
 ### Verdaccio
 
 To access [Verdaccio](https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/)
 click on the **verdaccio** tab in the console.
 
-TODO:(anau) add OPS stuff setup documentation
+Also in the script a user has been created.
+Use the same username and password as before.
 
 ![Verdaccio start screen](assets/verdaccio_start_screen.png)
+
+There is a *.npmrc* created in *~/*.
+
+`cat .npmrc`{{execute}}
+
+For validating that we are logged in run
+
+`npm whoami --registry http://localhost:30001`{{execute}}

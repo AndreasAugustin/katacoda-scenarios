@@ -1,7 +1,7 @@
 {
-  "title": "npm and typescript with gts",
-  "description": "build typescript with npm and gts",
-  "difficulty": "Beginner",
+  "title": "sls typescript local development",
+  "description": "use serverless with typescript in local development",
+  "difficulty": "Intermediate",
   "time": "5-10 minutes",
   "details": {
     "steps": [
@@ -10,11 +10,11 @@
         "text": "step1.md"
       },
       {
-        "title": "npm scripts",
+        "title": "Invoke API",
         "text": "step2.md"
       },
       {
-        "title": "npm tests",
+        "title": "Testing",
         "text": "step3.md"
       }
     ],
@@ -26,14 +26,6 @@
     },
     "assets": {
       "host01": [
-        {
-          "file": "index.ts",
-          "target": "~/src/"
-        },
-        {
-          "file": "index.spec.ts",
-          "target": "~/test/"
-        },
         {
           "file": ".gitignore",
           "target": "~/"

@@ -15,7 +15,7 @@ The style settings are taken from
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](
     https://github.com/google/gts)
 
-*gts** will let you define a test framework of your choice.
+**gts** will let you define a test framework of your choice.
 For this scenario we choose
 
 - [mocha](https://www.npmjs.com/package/mocha) for the testing framework
