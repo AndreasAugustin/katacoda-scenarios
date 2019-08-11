@@ -1,5 +1,8 @@
 # Katacoda scenarios
 
+[![KataCoda](http://shields.katacoda.com/katacoda/andreasaugustin/count.svg)](
+    https://www.katacoda.com/andreasaugustin "Get your profile on Katacoda.com")
+
 [![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](
     https://travis-ci.com/AndreasAugustin/katacoda-scenarios)
 [![Join the chat at https://gitter.im/AndreasAugustin-katacoda-scenarios/community](
