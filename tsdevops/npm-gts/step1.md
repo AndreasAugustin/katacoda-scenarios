@@ -1,4 +1,4 @@
-# Google Typescript
+# Basic setup
 
 First we need to init our **npm** project for **typescript**.
 
@@ -11,14 +11,23 @@ You get some stuff here:
 - Lint checker with google typescript style conventions in **tslint.json**
 - Formatter options for google typescript style conventions in **prettier.conf.js**
 
-If you open **package.json** in the editor you see that some basic scripts are defined
+The style settings are taken from
+[![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](
+    https://github.com/google/gts)
 
-`npm run compile`{{execute}}
+**gts** will let you define a test framework of your choice.
+For this scenario we choose
 
-`npm run clean`{{execute}}
+- [mocha](https://www.npmjs.com/package/mocha) for the testing framework
+- [chai](https://www.npmjs.com/package/chai) for the assertion lib
+- [nyc](https://www.npmjs.com/package/nyc) for test coverage
+- [ts-node](https://www.npmjs.com/package/ts-node)
 
-`npm run check`{{dexecute}}
+We need to install those libs.
 
-`npm run fix`{{execute}}
+`npm i -D chai mocha nyc ts-node`{{execute}}
 
-Just play around a bit and have some fun :rocket .
+Because we also need the types declaration files for typescript,
+we also need to install those
+
+`npm i -D @types/mocha @types/chai`{{execute}}
