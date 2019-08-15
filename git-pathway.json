@@ -1,0 +1,11 @@
+{
+  "title": "Advanced git",
+  "description": "learn advanced git stuff",
+  "courses": [
+    {
+      "course_id": "git-multi-user",
+      "title": "Multi user git",
+      "description": "Learn how to handle multi git user on one machine with ssh"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "title": "NPM lerna basics",
+  "description": "Learn how to manage packages with lerna",
+  "difficulty": "intermediate",
+  "time": "10-20 minutes",
+  "environment": {
+    "hideintro": false,
+    "showdashboard": true,
+    "dashboards": [
+      { "name": "gitea-1", "port": 30001 },
+      { "name": "gitea-2", "port": 30002 }
+    ],
+    "uilayout": "terminal",
+    "icon": "fa-node",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - DevOps setup",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "setup_env.sh",
+          "target": "~/assets/",
+          "chmod": "+x"
+        },
+        {
+          "file": "docker-compose.yml",
+          "target": "~/assets/"
+        },
+        {
+          "file": "app.ini",
+          "target": "~/assets/"
+        }
+      ]
+    }
+  }
+}
