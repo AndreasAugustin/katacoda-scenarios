@@ -42,7 +42,11 @@
           "target": "~/assets/"
         },
         {
-          "file": "app.ini",
+          "file": "app1.ini",
+          "target": "~/assets/"
+        },
+        {
+          "file": "app2.ini",
           "target": "~/assets/"
         }
       ]
