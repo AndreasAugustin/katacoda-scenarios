@@ -4,6 +4,7 @@
 
 [![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](https://travis-ci.com/AndreasAugustin/katacoda-scenarios)
 [![Join the chat at https://gitter.im/AndreasAugustin-katacoda-scenarios/community](https://badges.gitter.im/AndreasAugustin-katacoda-scenarios/community.svg)](https://gitter.im/AndreasAugustin-katacoda-scenarios/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=AndreasAugustin/katacoda-scenarios)](https://dependabot.com)
 
 [![GitHub](https://img.shields.io/github/license/AndreasAugustin/katacoda-scenarios)](LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/AndreasAugustin/katacoda-scenarios)](https://github.com/AndreasAugustin/katacoda-scenarios/issues)
