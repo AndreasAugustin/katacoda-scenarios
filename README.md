@@ -1,20 +1,13 @@
 # Katacoda scenarios
 
-[![KataCoda](http://shields.katacoda.com/katacoda/andreasaugustin/count.svg)](
-    https://www.katacoda.com/andreasaugustin "Get your profile on Katacoda.com")
+[![KataCoda](https://shields.katacoda.com/katacoda/andreasaugustin/count.svg)](https://www.katacoda.com/andreasaugustin "Get your profile on Katacoda.com")
 
-[![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](
-    https://travis-ci.com/AndreasAugustin/katacoda-scenarios)
-[![Join the chat at https://gitter.im/AndreasAugustin-katacoda-scenarios/community](
-    https://badges.gitter.im/AndreasAugustin-katacoda-scenarios/community.svg)](
-        https://gitter.im/AndreasAugustin-katacoda-scenarios/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](https://travis-ci.com/AndreasAugustin/katacoda-scenarios)
+[![Join the chat at https://gitter.im/AndreasAugustin-katacoda-scenarios/community](https://badges.gitter.im/AndreasAugustin-katacoda-scenarios/community.svg)](https://gitter.im/AndreasAugustin-katacoda-scenarios/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![GitHub](https://img.shields.io/github/license/AndreasAugustin/katacoda-scenarios)](
-    LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/AndreasAugustin/katacoda-scenarios)](
-    https://github.com/AndreasAugustin/katacoda-scenarios/issues)
-[![GitHub contributors](https://img.shields.io/github/contributors/AndreasAugustin/katacoda-scenarios)](
-    .github/CONTRIBUTING.md)
+[![GitHub](https://img.shields.io/github/license/AndreasAugustin/katacoda-scenarios)](LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/AndreasAugustin/katacoda-scenarios)](https://github.com/AndreasAugustin/katacoda-scenarios/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/AndreasAugustin/katacoda-scenarios)](.github/CONTRIBUTING.md)
 
 ## Abstract
 
