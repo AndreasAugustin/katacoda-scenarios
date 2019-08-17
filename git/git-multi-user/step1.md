@@ -34,9 +34,9 @@ Add the public key content to related gitea account
 
 See the step by step instructions
 
-![Gitea-1](assets/gitea-1.png)
-![Gitea-2](assets/gitea-2.png)
-![Gitea-3](assets/gitea-3.png)
+![Gitea-1](/andreasaugustin/courses/git/git-multi-user/assets/gitea-1.png)
+![Gitea-2](/andreasaugustin/courses/git/git-multi-user/assets/gitea-2.png)
+![Gitea-3](/andreasaugustin/courses/git/git-multi-user/assets/gitea-3.png)
 
 Also we need to configure which user to use for which git server.
 `touch ~/.ssh/config`{{execute}}
