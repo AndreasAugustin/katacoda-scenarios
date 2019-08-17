@@ -30,7 +30,7 @@ with the **password: secret**.
 To access [Gitea](https://[[HOST_SUBDOMAIN]]-30002-[[KATACODA_HOST]].environments.katacoda.com/)
 click on the **gitea** tab in the console.
 
-![Gitea start screen](assets/gitea_start_screen.png)
+![Gitea start screen](/andreasaugustin/courses/tsdevops/npm-lerna/assets/gitea_start_screen.png)
 
 Click login and use the username and password.
 As you can see there is alread a repository created.
@@ -45,7 +45,7 @@ click on the **verdaccio** tab in the console.
 Also in the script a user has been created.
 Use the same username and password as before.
 
-![Verdaccio start screen](assets/verdaccio_start_screen.png)
+![Verdaccio start screen](/andreasaugustin/courses/tsdevops/npm-lerna/assets/verdaccio_start_screen.png)
 
 There is a _.npmrc_ created in _~/_.
 
