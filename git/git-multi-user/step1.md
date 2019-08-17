@@ -32,20 +32,28 @@ Add the public key content to related gitea account
 `cat ~/.ssh/id_rsa_john_doe.pub`{{execute}}
 `cat ~/.ssh/id_rsa_jane_doe.pub`{{execute}}
 
+See the step by step instructions
+
+![Gitea-1](assets/gitea-1.png)
+![Gitea-2](assets/gitea-2.png)
+![Gitea-3](assets/gitea-3.png)
+
 Also we need to configure which user to use for which git server.
 `touch ~/.ssh/config`{{execute}}
 Copy
 
 ```ssh
 # gitea-1 john.doe
-Host localhost:30001
+Host localhost:22001
   HostName localhost
+  Port: 22001
   User git
   IdentityFile ~/.ssh/id_rsa_john_doe
 
 # gitea-2 jane.doe
-Host localhost:30002
+Host localhost:22002
   HostName localhost
+  Port: 22002
   User git
   IdentityFile ~/.ssh/id_rsa_jane_doe
 ```
@@ -53,3 +61,13 @@ Host localhost:30002
 to **~/.ssh/config**
 
 Now we are set to test the settings.
+
+We want to clone the repositories
+
+`mkdir git`{{execute}}
+`cd git`{{execute}}
+`git clone ssh://git@localhost:22001/john.doe/john-repo.git`{{execute}}
+`git clone ssh://git@localhost:22002/jane.doe/jane-repo.git`{{execute}}
+
+Now make a change to both repositories, commit and push.
+As you can see when that the right user is auto selected :rocket:
