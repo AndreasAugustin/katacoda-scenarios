@@ -16,7 +16,7 @@ in a `docker-compose` environment.
 
 Setup environment
 
-`./assets/setup_env.sh`{{execute}}
+`~/assets/setup_env.sh`{{execute}}
 
 ### Gitea
 
@@ -34,7 +34,7 @@ click on the **gitea** tab in the console.
 
 Click login and use the username and password.
 As you can see there is alread a repository created.
-That one is cloned into the *git/npm-lerna* folder.
+That one is cloned into the _git/npm-lerna_ folder.
 All this was done in the setup script.
 
 ### Verdaccio
@@ -47,7 +47,7 @@ Use the same username and password as before.
 
 ![Verdaccio start screen](assets/verdaccio_start_screen.png)
 
-There is a *.npmrc* created in *~/*.
+There is a _.npmrc_ created in _~/_.
 
 `cat .npmrc`{{execute}}
 

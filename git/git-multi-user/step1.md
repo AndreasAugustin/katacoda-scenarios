@@ -8,7 +8,7 @@ For the scenario there are 2 different gitea server enabled.
 ## Setup environment
 
 Run the following command for the setup
-`./assets/setup_env.sh`{{execute}}
+`~/assets/setup_env.sh`{{execute}}
 
 - [Gitea 1](https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/)
   - username: john.doe
@@ -25,8 +25,8 @@ Login with both users.
 
 To access our repository we need to create 2 ssh key pairs
 
-`ssh-keygen -t rsa -C "john.doe@random.de" -f '~/.ssh/id_rsa_john_doe'`{execute}
-`ssh-keygen -t rsa -C "jane.doe@random.de" -f '~/.ssh/id_rsa_jane_doe'`{execute}
+`ssh-keygen -t rsa -N "" -C "john.doe@random.de" -f '/root/.ssh/id_rsa_john_doe'`{{execute}}
+`ssh-keygen -t rsa -N "" -C "jane.doe@random.de" -f '/root/.ssh/id_rsa_jane_doe'`{{execute}}
 
 Add the public key content to related gitea account
 `cat ~/.ssh/id_rsa_john_doe.pub`{{execute}}
