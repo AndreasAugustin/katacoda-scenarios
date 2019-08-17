@@ -34,6 +34,9 @@ git config --global --replace-all user.email "${EMAIL}"
 # Prepare Gitea
 echo "-------------- prepare gitea environment"
 
+# HACK: Wait for user creation finish. Else possible race condition.
+sleep 2
+
 ${DOCKER_COMPOSE_CMD} exec -u git gitea gitea admin create-user --name="${USERNAME}" --password="${PASSWORD}" --email "${EMAIL}"
 
 # HACK: Wait for user creation finish. Else possible race condition.
