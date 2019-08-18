@@ -46,14 +46,14 @@ Copy
 # gitea-1 john.doe
 Host localhost:22001
   HostName localhost
-  Port: 22001
+  Port 22001
   User git
   IdentityFile ~/.ssh/id_rsa_john_doe
 
 # gitea-2 jane.doe
 Host localhost:22002
   HostName localhost
-  Port: 22002
+  Port 22002
   User git
   IdentityFile ~/.ssh/id_rsa_jane_doe
 ```

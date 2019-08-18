@@ -52,3 +52,5 @@ curl -X POST \
     -H "Content-Type: application/json" \
     -d "{ \"auto_init\": true, \"description\": \"tutorial\", \"gitignores\": \"Node\", \"license\": \"MIT\", \"name\": \"${REPO2_NAME}\", \"private\": false, \"readme\": \"Default\"}" \
     -u "${USERNAME2}:${PASSWORD}"
+
+echo "-------- done"
