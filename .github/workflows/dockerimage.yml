@@ -11,8 +11,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: build
-      run: make docker-build
+      run: make -e BUILD_ENV=COMPOSE bootstrap
     - name: markdownlint
-      run: make markdownlint
+      run: make -e BUILD_ENV=COMPOSE markdownlint
     - name: validate
-      run: make validate
+      run: make -e BUILD_ENV=COMPOSE validate
