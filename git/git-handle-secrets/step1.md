@@ -26,12 +26,10 @@ To receive the name use
 
 with the **password: secret**.
 
-To access [Gitea](https://[[HOST_SUBDOMAIN]]-30002-[[KATACODA_HOST]].environments.katacoda.com/)
+To access [Gitea](https://[[HOST_SUBDOMAIN]]-30001-[[KATACODA_HOST]].environments.katacoda.com/)
 click on the **gitea** tab in the console.
-
-![Gitea start screen](/andreasaugustin/courses/tsdevops/npm-lerna/assets/gitea_start_screen.png)
 
 Click login and use the username and password.
 As you can see there is alread a repository created.
-That one is cloned into the _git/npm-lerna_ folder.
+That one is cloned into the _git/foo_ folder.
 All this was done in the setup script.
