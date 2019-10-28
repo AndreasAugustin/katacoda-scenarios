@@ -1,0 +1,30 @@
+{
+  "name": "katacoda-scenarios",
+  "version": "0.1.0",
+  "description": "katacoda scenarios",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreasAugustin/katacoda-scenarios.git"
+  },
+  "keywords": [
+    "katacoda",
+    "learning",
+    "interactive"
+  ],
+  "author": "andreas.augustin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreasAugustin/katacoda-scenarios/issues"
+  },
+  "homepage": "https://github.com/AndreasAugustin/katacoda-scenarios#readme",
+  "devDependencies": {
+    "katacoda-cli": "0.0.19",
+    "markdownlint-cli": "^0.19.0"
+  }
+}

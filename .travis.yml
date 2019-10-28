@@ -12,6 +12,6 @@ before_install:
  - docker-compose version
 
 script:
-  - make docker-build
-  - make markdownlint
-  - make validate
+  - make -e BUILD_ENV=COMPOSE bootstrap
+  - make -e BUILD_ENV=COMPOSE markdownlint
+  - make -e BUILD_ENV=COMPOSE validate
