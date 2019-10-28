@@ -6,6 +6,11 @@
       "course_id": "git-multi-user",
       "title": "Multi user git",
       "description": "Learn how to handle multi git user on one machine with ssh"
+    },
+    {
+      "course_id": "git-handle-secrets",
+      "title": "Handle secrets with git",
+      "description": "Learn how to handle secrets with git"
     }
   ]
 }

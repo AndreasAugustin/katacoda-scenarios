@@ -1,14 +1,13 @@
 {
-  "title": "Git multi user",
-  "description": "Learn how to handle multi user with git",
+  "title": "Git handle secrets",
+  "description": "Learn how to handle secrets with git",
   "difficulty": "intermediate",
   "time": "10-20 minutes",
   "environment": {
     "hideintro": false,
     "showdashboard": true,
     "dashboards": [
-      { "name": "gitea-1", "port": 30001 },
-      { "name": "gitea-2", "port": 30002 }
+      { "name": "gitea-1", "port": 30001 }
     ],
     "uilayout": "terminal",
     "icon": "fa-node",
@@ -22,6 +21,10 @@
       {
         "title": "Step 1 - DevOps setup",
         "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Let's start",
+        "text": "step2.md"
       }
     ],
     "intro": {
@@ -43,10 +46,6 @@
         },
         {
           "file": "app1.ini",
-          "target": "~/assets/"
-        },
-        {
-          "file": "app2.ini",
           "target": "~/assets/"
         }
       ]

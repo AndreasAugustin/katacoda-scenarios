@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+#####################
+# Variables
+#####################
+DIR=$(dirname "$0")
+DOCKER_COMPOSE_CMD="docker-compose -f ${DIR}/docker-compose.yml"
+SET_GIT_USERNAME=$(git config --global user.name)
+SET_GIT_EMAIL=$(git config --global user.email)
+USERNAME1="${SET_GIT_USERNAME:-john.doe}"
+EMAIL1="${SET_GIT_EMAIL:-john.doe@random.me}"
+PASSWORD=secret
+GITEA1_URL="http://localhost:30001"
+REPO1_NAME="john-repo"
+
+echo "username1 set to: ${USERNAME1}"
+echo "email1 set to: ${EMAIL1}"
+
+#####################
+#   Comands
+#####################
+echo "-------------- starting docker container"
+${DOCKER_COMPOSE_CMD} up -d
+
+# Prepare Gitea
+echo "-------------- prepare gitea environment"
+sleep 2
+
+${DOCKER_COMPOSE_CMD} exec -u git gitea-1 gitea admin create-user --name="${USERNAME1}" --password="${PASSWORD}" --email "${EMAIL1}"
+
+# HACK: Wait for user creation finish. Else possible race condition.
+sleep 5
+
+curl -X POST \
+    "${GITEA1_URL}/api/v1/user/repos" \
+    -H "accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d "{ \"auto_init\": true, \"description\": \"tutorial\", \"gitignores\": \"Node\", \"license\": \"MIT\", \"name\": \"${REPO1_NAME}\", \"private\": false, \"readme\": \"Default\"}" \
+    -u "${USERNAME1}:${PASSWORD}"
+
+echo "-------- done"
+
