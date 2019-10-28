@@ -34,7 +34,7 @@ Use the mail adress which is added to your git user
 
 `gpg --full-generate-key`{{execute}}
 
-### Setup git-crypt 
+### git-crypt
 
 In the setup step we already created a git repository `~/git/foo`
 First change into the directory
