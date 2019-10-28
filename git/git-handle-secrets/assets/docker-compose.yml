@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  gitea-1:
+    image: gitea/gitea:1.8.3
+    volumes:
+      - ./app1.ini:/data/gitea/conf/app.ini
+    ports:
+      - "30001:3000"
+      - "22001:22"
