@@ -20,7 +20,7 @@ echo "-------------- prepare git"
 
 git config --global --replace-all user.name "${USERNAME}"
 git config --global --replace-all user.email "${EMAIL}"
-
+git config --global push.default simple
 
 #####################
 #   Comands
@@ -30,7 +30,7 @@ ${DOCKER_COMPOSE_CMD} up -d
 
 # Prepare Gitea
 echo "-------------- prepare gitea environment"
-sleep 2
+sleep 5
 
 ${DOCKER_COMPOSE_CMD} exec -u git gitea-1 gitea admin create-user --name="${USERNAME}" --password="${PASSWORD}" --email "${EMAIL}"
 
