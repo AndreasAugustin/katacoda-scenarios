@@ -29,7 +29,8 @@ information:  ## echo some build information
 
 .PHONY: validate
 validate: information ## Validate the katacoda scenarios
-	$(DOCKER_COMPOSE) npx katacoda validate:all --repo=.
+	$(DOCKER_COMPOSE) npx katacoda validate:all --repo=./tsdevops/
+	$(DOCKER_COMPOSE) npx katacoda validate:all --repo=./git/
 
 .PHONY: markdownlint
 markdownlint: information ## Validate markdown files
