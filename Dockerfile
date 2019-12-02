@@ -1,4 +1,4 @@
-FROM node:13.1.0-alpine
+FROM node:13.2.0-alpine
 
 RUN apk add --update --no-cache bash make git zsh curl
 # install oh-my-zsh
