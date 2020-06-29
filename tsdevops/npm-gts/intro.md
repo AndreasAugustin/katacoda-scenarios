@@ -8,7 +8,7 @@ If you want to subscribe to changes please subscribe
 
 The purpose of this scenario is to learn the basics for
 [gts](
-    https://www.npmjs.com/package/gts)
+    https://www.npmjs.com/package/gts) which gives you basic parameters for typescript builds.
 
 ## Issues
 
