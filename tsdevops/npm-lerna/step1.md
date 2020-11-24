@@ -25,7 +25,7 @@ To receive the name use
 
 `git config --global user.name`{{execute}}
 
-with the **password: secret**.
+with the **password: secret**
 
 To access [Gitea](https://[[HOST_SUBDOMAIN]]-30002-[[KATACODA_HOST]].environments.katacoda.com/)
 click on the **gitea** tab in the console.
