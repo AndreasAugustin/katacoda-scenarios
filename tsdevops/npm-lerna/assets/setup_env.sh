@@ -2,11 +2,9 @@
 
 #####################
 # Variables
-#####################
-DIR=$(dirname "$0")
-ROOT_DIR="${DIR}/.."
+ROOT_DIR="/root"
 GIT_DIR="${ROOT_DIR}/git"
-DOCKER_COMPOSE_CMD="docker-compose -f ${DIR}/docker-compose.yml"
+DOCKER_COMPOSE_CMD="docker-compose -f ${ROOT_DIR}/assets/docker-compose.yml"
 SET_GIT_USERNAME=$(git config --global user.name)
 SET_GIT_EMAIL=$(git config --global user.email)
 USERNAME="${SET_GIT_USERNAME:-john.doe}"
