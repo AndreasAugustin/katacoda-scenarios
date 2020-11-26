@@ -33,12 +33,14 @@ git config --global --replace-all user.email "${EMAIL}"
 echo "-------------- prepare gitea environment"
 
 # HACK: Wait for user creation finish. Else possible race condition.
-sleep 2
+echo "5 seconds -------- Wait for user creation finish. Else possible race condition"
+sleep 5
 
 ${DOCKER_COMPOSE_CMD} exec -u git gitea gitea admin create-user --name="${USERNAME}" --password="${PASSWORD}" --email "${EMAIL}"
 
 # HACK: Wait for user creation finish. Else possible race condition.
-sleep 5
+echo "10 seconds -------- Wait for user creation finish. Else possible race condition."
+sleep 10
 
 curl -X POST \
     "${GITEA_URL}/api/v1/user/repos" \
@@ -48,7 +50,6 @@ curl -X POST \
     -u "${USERNAME}:${PASSWORD}"
 
 # init local repo
-mkdir -p "${GIT_DIR}"
 pushd "${GIT_DIR}" || exit
 git clone "${GITEA_URL}/${USERNAME}/${REPO_NAME}.git"
 popd || exit
