@@ -50,6 +50,7 @@ curl -X POST \
     -u "${USERNAME}:${PASSWORD}"
 
 # init local repo
+mkdir -p "${GIT_DIR}"
 pushd "${GIT_DIR}" || exit
 git clone "${GITEA_URL}/${USERNAME}/${REPO_NAME}.git"
 popd || exit
