@@ -25,6 +25,6 @@
   "homepage": "https://github.com/AndreasAugustin/katacoda-scenarios#readme",
   "devDependencies": {
     "katacoda-cli": "0.0.20",
-    "markdownlint-cli": "^0.25.0"
+    "markdownlint-cli": "^0.27.1"
   }
 }
