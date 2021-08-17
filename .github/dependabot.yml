@@ -10,20 +10,14 @@ updates:
   - dependency-name: node
     versions:
     - 15.10.0.pre.alpine
-    - 15.11.0.pre.alpine
-    - 15.12.0.pre.alpine
     - 15.13.0.pre.alpine
     - 15.6.0.pre.alpine
     - 15.7.0.pre.alpine
     - 15.8.0.pre.alpine
     - 15.9.0.pre.alpine
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: weekly
-    time: "04:00"
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: markdownlint-cli
+  - dependency-name: alpine
     versions:
-    - 0.26.0
+    - 3.13.0
+    - 3.13.1
+    - 3.13.3
+    - 3.13.4

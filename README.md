@@ -1,42 +1,33 @@
-# Katacoda scenarios
+# template
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![KataCoda](https://shields.katacoda.com/katacoda/andreasaugustin/count.svg)](https://www.katacoda.com/andreasaugustin "Get your profile on Katacoda.com")
+![Lint](https://github.com/AndreasAugustin/template/workflows/Lint/badge.svg)
 
-[![Build Status Master](https://travis-ci.com/AndreasAugustin/katacoda-scenarios.svg?branch=master)](https://travis-ci.com/AndreasAugustin/katacoda-scenarios)
-[![Join the chat at https://gitter.im/AndreasAugustin-katacoda-scenarios/community](https://badges.gitter.im/AndreasAugustin-katacoda-scenarios/community.svg)](https://gitter.im/AndreasAugustin-katacoda-scenarios/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=AndreasAugustin/katacoda-scenarios)](https://dependabot.com)
+## DEV
 
-[![GitHub](https://img.shields.io/github/license/AndreasAugustin/katacoda-scenarios)](LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/AndreasAugustin/katacoda-scenarios)](https://github.com/AndreasAugustin/katacoda-scenarios/issues)
-[![GitHub contributors](https://img.shields.io/github/contributors/AndreasAugustin/katacoda-scenarios)](.github/CONTRIBUTING.md)
-
-## Abstract
-
-This repository includes the source code for different Katacoda scenarios.
-Please see [README](doc/README.md) for usage information.
-
-## Community
-
-Please see [.github/](.github/) folder for information.
-
-## GitHub Pages
-
-The pages are deployed to [https://andreasaugustin.github.io/katacoda-scenarios/](https://andreasaugustin.github.io/katacoda-scenarios/)
-
-## Development
-
-The project is built with `make`
-
-### Information about the make targets
+The development environment targets are located in the [Makefile](Makefile)
 
 ```bash
 make help
 ```
 
-### Playground
+## Contributors ✨
 
-Docker is used for build environment.
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-```bash
-make bash
-```
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/AndreasAugustin"><img src="https://avatars0.githubusercontent.com/u/8027933?v=4" width="100px;" alt=""/><br /><sub><b>andy Augustin</b></sub></a><br /><a href="https://github.com/AndreasAugustin/template/commits?author=AndreasAugustin" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
