@@ -1,8 +1,15 @@
-version: '3.4'
+version: '3.7'
 
 services:
   dev:
-    build: 
+    build:
       context: .
+      target: DEV
+    volumes:
+      - .:/app/
+  docs:
+    build:
+      context: .
+      target: DOCS
     volumes:
       - .:/app/

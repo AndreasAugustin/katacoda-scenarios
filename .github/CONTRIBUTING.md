@@ -1,11 +1,16 @@
 # Contributing
 
+## Branching model
+
+We use the [GitHub flow](https://guides.github.com/introduction/flow/)
+
 ## Commit messages
 
-Please add the issue number as prefix to your commit message header.
+We use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+Please als add an issue and the issue number as prefix to your commit message header description.
 
 ```bash
-git commit -m "(#1) add doc/ folder"
+git commit -m "<type>[optional scope]: (#ticket_nr) <description>"
 ```
 
 ### Emojis
